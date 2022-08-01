@@ -1,0 +1,32 @@
+:root {
+  --seed-blue: 200 72% 49%;
+  --seed-blue-darker: 199 100% 29%;
+  --seed-blue-darker-hsl: hsl(var(--seed-blue-darker));
+  --blue-bg-acent: linear-gradient(hsla(var(--seed-blue) / 0.14), hsl(var(--seed-blue) / 0.14)), linear-gradient(hsla(0 0% 100% / 1), hsla(0 0% 100% / 1));
+
+  --seed-green: 94 100% 26%;
+  --seed-green-darker: 97 100% 21%;
+  --seed-green-darker-hsl: hsl(var(--seed-green-darker));
+  --green-bg-acent: linear-gradient(hsla(var(--seed-green) / 0.14), hsl(var(--seed-green) / 0.14)), linear-gradient(hsla(0 0% 100% / 1), hsla(0 0% 100% / 1));
+}
+@font-face {
+  font-family: 'sf-rounded';
+  font-weight: 600;
+  src: url(https://public-asse.s3.ca-central-1.amazonaws.com/SFProRounded-Medium.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'icon-font';
+  font-style: normal;
+  font-weight: 100 700;
+  src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v39/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsLjBuVY.woff2) format('woff2');
+}
+
+.layout {
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 14px 12px 12px;
+  gap: 4px;
+}

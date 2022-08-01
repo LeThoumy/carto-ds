@@ -1,0 +1,61 @@
+.accent-blue {
+  font-family: 'sf-rounded';
+  border-radius: 8px;
+  background: var(--blue-bg-acent);
+  color: var(--seed-blue-darker-hsl);
+  border: 1px solid hsla(var(--seed-blue-darker) / 0);
+  box-shadow: 0px 1px 2px hsla(var(--seed-blue-darker) / 0.3), 0px 1px 2px 1px hsla(var(--seed-blue-darker) / 0.15);
+  transition: all cubic-bezier(0.4, 0, 0.3, 1) 0.3s;
+}
+.accent-green {
+  font-family: 'sf-rounded';
+  border-radius: 8px;
+  background: var(--green-bg-acent);
+  color: var(--seed-green-darker-hsl);
+  border: 1px solid hsla(var(--seed-green-darker) / 0);
+  box-shadow: 0px 1px 2px hsla(var(--seed-green-darker) / 0.3), 0px 1px 2px 1px hsla(var(--seed-green-darker) / 0.15);
+  transition: all cubic-bezier(0.4, 0, 0.3, 1) 0.3s;
+}
+button:hover > * {
+  font-variation-settings: 'FILL' 0, 'wght' 900, 'GRAD' 200, 'opsz' 48;
+  transition: font-variation-settings cubic-bezier(0.1, 0, 0.3, 1) 0.75s;
+}
+
+.accent-blue:hover {
+  --blue-bg-acent: linear-gradient(hsla(var(--seed-blue) / 0.2), hsl(var(--seed-blue) / 0.2)), linear-gradient(hsla(0 0% 100% / 1), hsla(0 0% 100% / 1));
+  cursor: pointer;
+  border: 1px solid hsla(var(--seed-blue-darker) / 1);
+  transition: all cubic-bezier(0.1, 0, 0.3, 1) 0.35s;
+}
+.accent-green:hover {
+  --green-bg-acent: linear-gradient(hsla(var(--seed-green) / 0.2), hsl(var(--seed-green) / 0.2)), linear-gradient(hsla(0 0% 100% / 1), hsla(0 0% 100% / 1));
+  cursor: pointer;
+  border: 1px solid hsla(var(--seed-green-darker) / 1);
+  transition: all cubic-bezier(0.1, 0, 0.3, 1) 0.35s;
+}
+.accent-green:active {
+  --green-bg-acent: linear-gradient(hsla(var(--seed-green) / 0.3), hsl(var(--seed-green) / 0.3)), linear-gradient(hsla(0 0% 100% / 1), hsla(0 0% 100% / 1));
+  transition: all cubic-bezier(0.1, 0, 0.3, 1) 0.05s;
+}
+.accent-blue:active {
+  --blue-bg-acent: linear-gradient(hsla(var(--seed-blue) / 0.3), hsl(var(--seed-blue) / 0.3)), linear-gradient(hsla(0 0% 100% / 1), hsla(0 0% 100% / 1));
+  transition: all cubic-bezier(0.1, 0, 0.3, 1) 0.05s;
+}
+
+.var-icon {
+  font-family: 'icon-font';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 48;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <title>Stencil Component Starter</title>
+
+  <script type="module" src="/build/carto-ds.esm.js"></script>
+  <script nomodule src="/build/carto-ds.js"></script>
+  <link rel="stylesheet" href="/build/carto-ds.css">
+</head>
+
+<body>
+  <main>
+    <div>
+      <carto-accent-btn service="Flood" icon="water_drop" variant="accent-blue">
+        </cartofront-accent-btn>
+    </div>
+    <carto-accent-btn service="Home" icon="house" variant="accent-green">
+      </cartofront-accent-btn>
+  </main>
+  <style>
+    body {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    main {
+      display: inline-flex;
+      gap: 16px;
+    }
+  </style>
+</body>
+
+</html>
